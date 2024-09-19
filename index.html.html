@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dee Rise Property Ltd</title>
+    <!-- Description for Search Engines -->
+    <meta name="description" content="Find your perfect Airbnb apartment in Birmingham, Solihull, Wolverhampton, and West Midlands. We offer exceptional service accommodation for your stay.">
+    <!-- Keywords for Search Engines -->
+    <meta name="keywords" content="Airbnb, apartment in Birmingham, Airbnb in Birmingham, Solihull, Wolverhampton, West Midlands, service accommodation">
+
+    <link rel="shortcut icon" href="WhatsApp Image 2024-09-05 at 18.30.53_2772b08c.jpg"> <!-- Favicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome for icons -->
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            background-image: url('th 8.jpeg'); /* Background image */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        /* Header styles */
+        header {
+            width: 100%;
+            background: white;
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav button {
+            background-color: rgba(255, 255, 255, 0.8); /* Light background for buttons */
+            border: none; /* Remove default border */
+            border-radius: 5px; /* Rounded corners */
+            padding: 10px 15px; /* Padding inside the button */
+            margin: 0 5px; /* Margin between buttons */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s, transform 0.3s; /* Transition for smooth effects */
+            font-size: 1rem; /* Font size for buttons */
+            color: rgb(249, 242, 242); /* Text color */
+        }
+
+        nav button:hover {
+            background-color: #053794; /* Change background color on hover */
+            color: white; /* Change text color on hover */
+            transform: scale(1.05); /* Slightly enlarge the button on hover */
+        }
+
+        nav img {
+            height: 40px; /* Smaller logo size */
+            margin-right: auto; /* Move logo to the right end */
+        }
+
+        /* Glowing button styles */
+        .book-now {
+            background-color: #f5f5dc; /* Milky color */
+            border: 2px solid gold; /* Gold border */
+            color: rgb(22, 15, 15); /* Text color */
+            padding: 1rem 2rem;
+            font-size: 1.5rem;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0 0 20px blue;
+            animation: glow 1.5s infinite alternate, bounce 1.5s infinite; /* Animation for glowing effect and bouncing */
+        }
+
+        .book-now:hover {
+            background-color: #e2e2c9; /* Slightly darker milky color on hover */
+        }
+
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 20px rgba(219, 224, 221, 0.7);
+            }
+            to {
+                box-shadow: 0 0 40px rgb(220, 227, 223);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* Footer styles */
+        footer {
+            background: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            padding: 1rem 0;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+        }
+
+        /* Contact Details Section */
+        .contact-details {
+            display: none; /* Initially hidden */
+            background: rgba(64, 59, 59, 0.8);
+            padding: 1rem;
+            border-radius: 5px;
+            position: absolute;
+            top: 70px; /* Position below the nav */
+            z-index: 1000;
+            transition: opacity 0.5s ease-in-out; /* Smooth transition for appearing */
+        }
+
+        .close-btn {
+            background: transparent;
+            border: none;
+            color: rgb(140, 45, 45);
+            font-size: 1.2rem;
+            cursor: pointer;
+            float: right; /* Align close button to the right */
+            transition: color 0.3s;
+        }
+
+        .close-btn:hover {
+            color: #e74c3c; /* Change color on hover */
+        }
+
+        /* Main Content Styles */
+        .deeRise {
+            background-color: transparent; /* Light background for contrast */
+            border-radius: 10px; /* Rounded corners */
+            padding: 20px; /* Padding inside the box */
+            animation: fadeIn 0.5s ease-in; /* Fade-in animation */
+            text-align: center; /* Center text within the box */
+            margin-bottom: 20px; /* Spacing from the button */
+        }
+
+        .deeRise-content h1 {
+            color: #080808; /* Dark text color for better readability */
+            margin: 0 0 10px; /* Margin below the heading */
+            font-size: 3.5rem;
+            text-shadow: 0 7px 15px white;
+        }
+
+        .deeRise-content p {
+            color: black; /* Slightly lighter text color for the paragraph */
+            margin: 0; /* Remove default margin */
+            font-weight: bolder;
+            text-shadow: 0 5px 10px white;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0; /* Start invisible */
+                transform: translateY(20px); /* Start 20px lower */
+            }
+            to {
+                opacity: 1; /* End fully visible */
+                transform: translateY(0); /* End at original position */
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section with Navigation -->
+    <header>
+        <nav>
+            <img src="WhatsApp Image 2024-09-05 at 18.30.53_2772b08c.jpg" alt="Company Logo"> <!-- Company Logo -->
+            <button><a href="#contact" id="contactBtn">Contact Us</a></button>
+            <button>
+                <a href="#book" onclick="window.location.href='https://deeriseproperty.bookeddirectly.com/g';">Book with Us</a> 
+            </button><!-- Redirect to booking page -->
+            <button><a href="#home">Home</a></button>
+        </nav>
+    </header>
+    
+
+    <!-- Main Content with Glowing Button -->
+    <main style="flex-grow: 1; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <div class="deeRise">
+            <div class="deeRise-content">
+                <h1>Welcome to Dee Rise Property Ltd</h1><br><br>
+                <p>Your ideal place to find exceptional accommodations.</p>
+            </div>
+        </div>
+        <button class="book-now" onclick="window.location.href='https://deeriseproperty.bookeddirectly.com/g';">Book Now</button> <!-- Book Now button -->
+    </main>
+    <!-- Contact Details Section -->
+    <div class="contact-details" id="contactDetails">
+        <button class="close-btn" id="closeBtn">&times;</button> <!-- Close button -->
+        <p>&copy; 2024 Dee Rise Property Ltd. All rights reserved.</p>
+        <p>Email: <a href="mailto:info@deeriseproperty.com" style="color: white;">info@deeriseproperty.com</a></p>
+        <p>Phone: 020 8242 4179</p>
+        <p>Address: Southside Apartment 202 St Johns Walk, B54TL Birmingham, UK.</p>
+        <a href="https://www.facebook.com/profile.php?id=61555640283998" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a> <!-- Remember to change or hide this -->
+        <a href="https://www.instagram.com/deerise_property/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/dee-rise-property-b4a3002aa/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:info@deeriseproperty.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>For any inquiries, please click on "Contact Us" above.</p>
+    </footer>
+
+    <script>
+        // Show contact details when "Contact Us" button is clicked
+        document.getElementById('contactBtn').addEventListener('click', function() {
+            const contactDetails = document.getElementById('contactDetails');
+            contactDetails.style.display = 'block'; // Show the contact details
+            contactDetails.style.opacity = '1'; // Set opacity to 1 for visibility
+        });
+
+        // Close contact details when the close button is clicked
+        document.getElementById('closeBtn').addEventListener('click', function() {
+            const contactDetails = document.getElementById('contactDetails');
+            contactDetails.style.opacity = '0'; // Fade out effect
+            setTimeout(() => {
+                contactDetails.style.display = 'none'; // Hide after animation
+            }, 500); // Match the timeout with the CSS transition duration
+        });
+    </script>
+</body>
+</html>
